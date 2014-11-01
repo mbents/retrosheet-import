@@ -10,3 +10,5 @@ In order to import the .csv files into the database, launch the MySQL command li
 LOAD DATA LOCAL INFILE 'C:\\retrosheet\\events_master.csv' INTO TABLE <<DATABASE-NAME>>.events FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n';
 
 This takes the master .csv file created by the batch file and bulk inserts the data into the table created by the .sql script.
+
+Retrosheet event data can be downloaded and parsed using this project: https://github.com/mbents/retrosheet-download-dotnet
